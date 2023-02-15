@@ -9,3 +9,7 @@ A simple page showcasing some of the projects I have made with links to the gith
 ## Improvements:
 
 Update it with projects I create in the future, create a pop up when clicking on each of the projects images to show a short description of each rather than having to find it on github.
+
+### Live site: 
+
+https://dylang02.github.io/Portfolio-project/
