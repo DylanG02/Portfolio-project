@@ -155,6 +155,12 @@ input {
     place-content: center;
 }
 
+#projects img:hover {
+    opacity: 50%;
+    border: 5px solid aqua;
+    
+}
+
 .project-image {
     height: 200px;
     width: auto;
@@ -243,3 +249,73 @@ footer {
     grid-area: 3 / 1 / span 1 / span 2;
 }
 
+@media only screen and (max-width: 750px) {
+    body {
+        display: grid;
+        grid-template-areas: "header"
+                             "banner"
+                             "skills"
+                             "project-header"
+                             "projects"
+                             "footer";
+        padding: 0;
+    }
+    header {
+        grid-area: header;
+        max-width: 500px;
+        margin: 25px 0 25px 0;
+    }
+    #title {
+        font-size: 50px;
+    }
+    #banner {
+        grid-area: banner;
+        max-width: 500px;
+        margin: 25px 0 25px 0;
+        grid-gap: 25px;
+    }
+    #skills {
+        grid-area: skills;
+        max-width: 500px;
+        margin: 100px 0 25px 0;
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr)
+    }
+    #skill-three {
+        grid-area: 3 / 1 / span 1 / span 1;
+    }
+    #skill-four {
+        grid-area: 2 / 2 / span 1 / span 1;
+    }
+    #skill-five {
+        grid-area: 2 / 1 / span 1 / span 1;
+    }
+    #skill-six {
+        grid-area: 3 / 2 / span 1 / span 1;
+    }
+    .skill {
+        margin: 0 15px
+    }
+    .project-header {
+        grid-area: project-header;
+        max-width: 350px;
+        margin: 25px 0 25px 0;
+    }
+    #project-title {
+        font-size: 50px;
+        padding: 0 50px 0 0;
+    }
+    #projects {
+        grid-area: projects;
+        max-width: 500px;
+        margin: 25px 0 25px 0;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #skills {
+        grid-gap: 25px;
+    }
+    .skill {
+        padding: 25px;
+    }
+}
